@@ -1,14 +1,15 @@
 #Jokenpo
 
-import random
+from random import choice
 
 variaveis = {0:"Pedra", 1:"Papel", 2:"Tesoura"}
-
+valor = 0
+valorFicha = 2
 acertou = False
 
 while acertou == False:
         
-    jogadaComputador = random.randint(0,2)
+    jogadaComputador = choice(1)
     
     jogador = int(input("Entre com um número para jogar: 0 - Pedra | 1 - Papel | 2 - Tesoura: "))
         
@@ -57,5 +58,7 @@ while acertou == False:
             print(f"Empate! - Computador: {variaveis[jogadaComputador]} e Jogador: {variaveis[jogador]}")
             print("_____________________________________________________________________________________________")
                   
-else:
-    print("Entre com valores válidos")
+    else:
+        print("Entre com valores válidos")
+        continue
+    valor = valor + valorFicha
