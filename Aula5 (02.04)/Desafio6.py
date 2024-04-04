@@ -2,10 +2,10 @@
 # de uma PA. No final, mostre os 10 primeiros termos dessa
 # progressão.
 
-resultado = []
+resultadoPa = []
 termo = int(input("Por favor, digite o primeiro termo da Progressão: "))
 razao = int(input("Por favor, digite a razão: "))
-for i in range(10):
-    termos = termo + (i+1) * razao
-    resultado.append(termos)
-print(resultado)
+for i in range(0, 10, 1):
+    termos = termo + (i) * razao
+    resultadoPa.append(termos)
+print(resultadoPa)
