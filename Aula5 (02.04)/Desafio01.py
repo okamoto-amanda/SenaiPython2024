@@ -4,7 +4,7 @@
 
 from time import sleep
 print("Contagem regressiva!")
-for i in range(10,0,-1):
+for i in range(10,-1 ,-1):
     sleep(1)
     print(i)
 print("☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼\n☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼")
