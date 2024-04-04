@@ -4,8 +4,9 @@
 
 numerosImpMult = []
 for num in range(1, 501):  # de 1 até 500
-    if num % 2 != 0:  # Ímpares
+    if num % 2 == 1:  # Ímpares
         if num % 3 == 0:  # Ímpares múltiplos de 3
             numerosImpMult.append(num)
+print((numerosImpMult))
 print(f"A soma dos múltiplos é: {sum(numerosImpMult)}.")
       
