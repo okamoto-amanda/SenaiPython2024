@@ -5,7 +5,6 @@ numeroUsuario = int(input("O Computador pensou em um numero de 1 a 10\n Digite s
 
 while True:
     tentativas = 0
-    
     if numeroUsuario != numeroMaquina:
         tentativas = tentativas + 1
         print("Palpite INCORRETO. Tente novamente: ")
