@@ -15,22 +15,22 @@ homens = 0
 mulheresMaiores20 = 0
 
 while True:
-    
-    idade = int(input("Por favor digite a idade da pessoa cadastrada: "))
-    sexo = input("Por favor digite o sexo da pessoa cadastrada: ").upper()
-    
-    if idade >= 18: 
-        maioridade +=1
+
+        idade = int(input("Por favor digite a idade da pessoa cadastrada: "))
+        sexo = input("Por favor digite o sexo da pessoa cadastrada: ").upper()
+        continuacao = input("Se deseja continuar digite S - Sim: ").upper()
         
-    if sexo == "F" and idade >= 20:
-        mulheresMaiores20 += 1
+        if idade >= 18: 
+            maioridade +=1
+            
+        if idade >= 20 and sexo == "F":
+            mulheresMaiores20 += 1
+            
+        if sexo == "M":
+            homens += 1
+            
+        if continuacao != "S":
+            break
+        
+print(maioridade, homens, mulheresMaiores20)
     
-    if sexo == "M":
-        homens += 1
-    
-    continuacao = input("Deseja continuar? ").upper()
-    if continuacao == "S":
-    
-    else:
-        continuacao = "N"
-        break

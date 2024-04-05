@@ -13,6 +13,7 @@ while True :
     print("\nDigite P para Par e I para Impar")
     escolhaJogador = input("Digite a sua opção: ").upper()
 #area do resultado par
+
     if escolhaJogador == "P":
         numeroJogador = int(input('Digite um valor: '))
         numeroMaquina = randint(0, 10)
