@@ -3,4 +3,7 @@
 # mostrando o total de vitorias consecutivas que ele conquistou
 # no final do jogo.
 
-opcoes {"par", "impar"}
+escolhaJogador = {"PAR", "IMPAR"}
+vitorias = 0
+
+
