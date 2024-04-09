@@ -9,4 +9,4 @@ print(len(itens))
 
 for i in range (0, len(itens)):
     if type(itens[i]) is str:
-        print(f"Produto: {itens[i]}    Preço: {itens[i+1]}")
+        print(f"Produto: {itens[i]}....Preço: R${itens[i+1]},00")
