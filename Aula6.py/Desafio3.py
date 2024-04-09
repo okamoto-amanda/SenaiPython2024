@@ -4,15 +4,19 @@
 # deve perguntar ao usuário se ele quer ou não continuar a
 # digitar valores
 
-
-numerosUsuario = []
+contador = 1
 print("Por favor, digite alguns números e o programa vai te dar o maior, o menor e sua média")
-respostaUsuario = 'SIM'
+numerosUsuario = int(input("Por favor, digite seu palpite"))
 
-while respostaUsuario == 'SIM':
-    valorUsuario = int(input("Digite um valor: "))
-    numerosUsuario.append(valorUsuario)
-    respostaUsuario = (input("Se quiser continuar, digite SIM ")).upper()
-else:
-    numerosUsuario = sorted(numerosUsuario)
-    print(f"A soma entre eles é {sum(numerosUsuario)}. O maior é {max(numerosUsuario)}, e o menor é o {min(numerosUsuario)}")
+if contador == 1 :
+    maior = numerosUsuario
+    menor = numerosUsuario
+else: 
+    if numerosUsuario > maior:
+        maior = numerosUsuario
+    if numerosUsuario < menor:
+        menor = numerosUsuario
+    contador += 1
+    
+continuar = str(input("Digite N para parar: ")).upper()
+media = soma/contador
