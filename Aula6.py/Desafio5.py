@@ -32,5 +32,5 @@ while True:
         if continuacao != "S":
             break
         
-print(maioridade, homens, mulheresMaiores20)
+print(f"Pessoas maiores de idade: {maioridade}, Quantidade de homens: {homens}. Quantidade de mulheres maiores de 20: {mulheresMaiores20}")
     

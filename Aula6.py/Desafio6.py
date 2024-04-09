@@ -17,12 +17,8 @@ while True:
     itemValor = int(input("Digite o valor do item: "))
     
     totalGasto = totalGasto + itemValor
-    
-    
-    if itemValor >= 100 :
-        produto100 += 1
-        
-    
+
+
     
 
 
