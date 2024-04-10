@@ -10,22 +10,40 @@
 
 print("Cesta de compras")
 produto100 = 0
-cestaDeCompras = []
 totalGasto = 0
+produtoMaisCaro = 0
+produtoBarato = 10000
+cestaDeCompras = []
+Stop = 'PARE'
 
 
 while True:
-    respostaUsuario = input("Digite o nome do item: ")
+    respostaUsuario = input("Digite o nome do item: ").upper()
     cestaDeCompras.append(respostaUsuario)
     itemValor = int(input("Digite o valor do item: "))
-        
     totalGasto = totalGasto + itemValor
+    
+    continuar = input("Se deseja continuar digite S (Sim): ").upper()
+    
+    
     if itemValor >= 100:
-            produto100 += 1
-    if respostaUsuario == "Pare":
+        produto100 += 1
+    
+    if itemValor >= produtoMaisCaro:
+        produtoMaisCaro = itemValor
+    
+    if itemValor <= produtoBarato:
+        produtoBarato = itemValor
+    
+    if continuar != 'S':
         break
     
 
+print(f'\nItens da sua Cesta de Compras{cestaDeCompras}')
+print(f'Total gasto:{totalGasto}')
+print(f'Quantidade de produtos que custam mais que R$100:{produto100}')
+print(f'Produto mais caro custou R${produtoMaisCaro}')
+print(f'O produto mais barato custou R${produtoBarato}')    
+
     
-
-
+#NAO TERMINOU
