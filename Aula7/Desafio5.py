@@ -12,3 +12,12 @@ for i in range (0, len(itens)):
         print(f"Produto: {itens[i]:.<10}....Preço: R${itens[i+1]},00")
         
 #print(type(itens))
+
+
+############# OU  ###########
+
+from tabulate import tabulate
+
+produtos = [['Bala','0,30'], ['Suco','1,00'],['Salgado','3,00'], ['Sorvete','5,00'] ]
+tuplaprodutos = tuple(produtos)
+print(tabulate(tuplaprodutos, headers=["Produto", "Preço"]))
