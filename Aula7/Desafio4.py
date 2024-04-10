@@ -12,7 +12,10 @@ print(numerosUsuario)
 print(f'O numero 9 apareceu {tuplaNumeroUsuario.count(9)} vezes')
 
 # Em que posição foi digitado o primeiro valor 3
-print(f'O numero 3 apareceu na {tuplaNumeroUsuario.index(3)}ª posição')
+if 3 in numerosUsuario:
+    print(f'O numero 3 apareceu na {tuplaNumeroUsuario.index(3)+1}ª posição')
+else:
+     print('O numero 3 apareceu não aparece na lista')
 
 # Quais foram o números pares.
 for i in tuplaNumeroUsuario:
