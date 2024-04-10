@@ -41,7 +41,7 @@ while True:
 
 print(f'\nItens da sua Cesta de Compras{cestaDeCompras}')
 print(f'Total gasto:{totalGasto}')
-print(f'Quantidade de produtos que custam mais que R$100:{produto100}')
+print(f'Quantidade de produtos que custam mais que R$100: {produto100}')
 print(f'Produto mais caro custou R${produtoMaisCaro}')
 print(f'O produto mais barato custou R${produtoBarato}')    
 

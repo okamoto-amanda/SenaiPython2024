@@ -30,4 +30,5 @@ media = numerosUsuario/contador
 print(media)
 print(maior)
 print(menor)
+
 #NAO TERMINOU
