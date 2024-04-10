@@ -5,7 +5,7 @@ timesBrasileirao = 'Amazonas','América-MG','Avaí','Botafogo-RP','Brusque','CRB
 print(timesBrasileirao[:5])
 
 #Os últimos 4 colocados da tabela
-print(timesBrasileirao[16:])
+print(timesBrasileirao[-4:])
 
 # Uma lista com os times em ordem alfabética.
 ordemTimes = sorted(timesBrasileirao)
@@ -13,4 +13,4 @@ print(ordemTimes)
 
 # Em que posição na tabela está o time do Santos.
 posicaoSantos = timesBrasileirao.index('Santos')
-print(posicaoSantos)
+print(f'Santos está na {posicaoSantos+1}º posição')
