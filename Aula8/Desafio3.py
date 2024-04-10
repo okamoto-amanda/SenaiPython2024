@@ -6,4 +6,4 @@
 
 numeroUsuario = []
 while len(numeroUsuario) < 5:
-    
+    numeroUsuario[1] = 
