@@ -17,13 +17,13 @@ mulheresMenores20 = 0
 while True:
 
         idade = int(input("Por favor digite a idade da pessoa cadastrada: "))
-        sexo = input("Por favor digite o sexo da pessoa cadastrada: ").upper()
-        continuacao = input("Se deseja continuar digite S - Sim: ").upper()
+        sexo = input("Por favor digite o sexo da pessoa cadastrada\nM - Masculino F - Feminino:  ").upper()
+        continuacao = input("Se deseja continuar digite S (Sim): ").upper()
         
         if idade >= 18: 
             maioridade +=1
             
-        if idade <= 20 and sexo == "F":
+        if idade < 20 and sexo == "F":
             mulheresMenores20 += 1
             
         if sexo == "M":
@@ -32,5 +32,5 @@ while True:
         if continuacao != "S":
             break
         
-print(f"Pessoas maiores de idade: {maioridade}, Quantidade de homens: {homens}. Quantidade de mulheres maiores de 20: {mulheresMenores20}")
+print(f"\nPessoas maiores de idade: {maioridade}\nQuantidade de homens: {homens}\nQuantidade de mulheres menores de 20: {mulheresMenores20}")
     
