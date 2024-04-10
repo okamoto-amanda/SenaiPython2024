@@ -6,4 +6,6 @@
 
 numeroUsuario = []
 while len(numeroUsuario) < 5:
-    numeroUsuario[1] = 
+    numeroUsuario.append(int(input('Numero: ')))
+
+print(numeroUsuario)
