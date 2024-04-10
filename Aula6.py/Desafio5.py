@@ -12,7 +12,7 @@ print("Este é um programa que armazena alguns dados")
 
 maioridade = 0
 homens = 0
-mulheresMaiores20 = 0
+mulheresMenores20 = 0
 
 while True:
 
@@ -23,8 +23,8 @@ while True:
         if idade >= 18: 
             maioridade +=1
             
-        if idade >= 20 and sexo == "F":
-            mulheresMaiores20 += 1
+        if idade <= 20 and sexo == "F":
+            mulheresMenores20 += 1
             
         if sexo == "M":
             homens += 1
@@ -32,5 +32,5 @@ while True:
         if continuacao != "S":
             break
         
-print(f"Pessoas maiores de idade: {maioridade}, Quantidade de homens: {homens}. Quantidade de mulheres maiores de 20: {mulheresMaiores20}")
+print(f"Pessoas maiores de idade: {maioridade}, Quantidade de homens: {homens}. Quantidade de mulheres maiores de 20: {mulheresMenores20}")
     
