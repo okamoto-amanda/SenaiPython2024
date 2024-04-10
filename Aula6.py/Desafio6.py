@@ -10,14 +10,21 @@
 
 print("Cesta de compras")
 produto100 = 0
+cestaDeCompras = []
+totalGasto = 0
+
 
 while True:
-    
-    input("Digite o nome do item: ")
+    respostaUsuario = input("Digite o nome do item: ")
+    cestaDeCompras.append(respostaUsuario)
     itemValor = int(input("Digite o valor do item: "))
-    
+        
     totalGasto = totalGasto + itemValor
-
+    if itemValor >= 100:
+            produto100 += 1
+    if respostaUsuario == "Pare":
+        break
+    
 
     
 

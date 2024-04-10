@@ -23,10 +23,12 @@ while True :
             
         if validacao == 0:
             print(f" O resultado foi Par. Você venceu!")
-            
+        
+        
         else:
             print(f" O resultado foi Impar. Você perdeu!")
             break
+    jogadorPontos = jogadorPontos + 1
 #area do resultado impar        
     if escolhaJogador == "I":
         numeroJogador = int(input('Digite um valor: '))
@@ -37,7 +39,7 @@ while True :
             
         if validacao == 1:
             print(f" O resultado foi Impar. Você venceu!")
-            
+            jogadorPontos = jogadorPontos + 1
         else:
             print(f" O resultado foi Par. Você perdeu!")
         

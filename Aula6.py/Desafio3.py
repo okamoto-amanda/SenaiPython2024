@@ -6,17 +6,28 @@
 
 contador = 1
 print("Por favor, digite alguns números e o programa vai te dar o maior, o menor e sua média")
-numerosUsuario = int(input("Por favor, digite seu palpite"))
 
-if contador == 1 :
-    maior = numerosUsuario
-    menor = numerosUsuario
-else: 
-    if numerosUsuario > maior:
-        maior = numerosUsuario
-    if numerosUsuario < menor:
-        menor = numerosUsuario
-    contador += 1
+maior = 0
+menor = 0
+continuar = "S"
+
+while continuar != "N":
+    numerosUsuario = int(input("Por favor, digite seu palpite: "))
     
-continuar = str(input("Digite N para parar: ")).upper()
-media = soma/contador
+    if contador == 1 :
+        maior = numerosUsuario
+        menor = numerosUsuario
+    else: 
+        if numerosUsuario > maior:
+            maior = numerosUsuario
+        if numerosUsuario < menor:
+            menor = numerosUsuario
+        contador += 1
+        
+    continuar = str(input("Deseja continuar? ")).upper()
+media = numerosUsuario/contador
+
+print(media)
+print(maior)
+print(menor)
+#NAO TERMINOU
