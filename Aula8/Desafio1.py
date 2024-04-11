@@ -9,5 +9,5 @@ while len(Lista1) < 5:
     Lista1.append(int(input("Por favor digite um número: ")))
     
 print(sorted(Lista1))
-print(f'O mair valor da lista é {max(Lista1)}. Sua posição é {Lista1.index(max(Lista1))+1}')
-print(f'O menor valor da lista é {min(Lista1)}. Sua posição é {Lista1.index(min(Lista1))+1} ')
+print(f'O mair valor da lista é {max(Lista1)}. Sua posição é a {Lista1.index(max(Lista1))+1}ª posição')
+print(f'O menor valor da lista é {min(Lista1)}. Sua posição é a {Lista1.index(min(Lista1))+1}ª posição ')

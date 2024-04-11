@@ -9,3 +9,5 @@ while len(numeroUsuario) < 5:
     numeroUsuario.append(int(input('Numero: ')))
 
 print(numeroUsuario)
+
+#nao finalizado
