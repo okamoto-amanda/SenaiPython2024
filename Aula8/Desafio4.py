@@ -19,6 +19,6 @@ for i in listaCompleta:
     else: 
             listaImpares.append(i)        
             
-print(f'Lista completa:{listaCompleta}')
-print(f'Somente numeros pares:{listaPares}')
-print(f'Somente numeros impares:{listaImpares}')
+print(f'Lista completa:{sorted(listaCompleta)}')
+print(f'Somente numeros pares:{sorted(listaPares)}')
+print(f'Somente numeros impares:{sorted(listaImpares)}')
