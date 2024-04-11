@@ -7,8 +7,8 @@
 listaUsuario = []
 
 while True:
-    NumeroUsuario = int(input("Digite 0 para sair \nPor favor, digite um novo número: "))
-    if NumeroUsuario == 0:
+    NumeroUsuario = (input("Digite N para sair \nOu digite um novo número: ")).upper()
+    if NumeroUsuario == 'N':
         break
     if  NumeroUsuario not in listaUsuario :
         listaUsuario.append(NumeroUsuario)
