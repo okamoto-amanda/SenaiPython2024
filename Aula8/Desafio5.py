@@ -10,14 +10,18 @@
 nomePessoas = []
 pesoPessoas = []
 continuacao = 'S'
-posicoes = 0
+salvar = []
+
 while True:
     nomePessoas.append((input("Digite o nome: ")))
-    pesoPessoas.append(float(input('Digite o peso da pessoa cadastrada anteriormente: ')))
+    pesoPessoas.append((input('Digite o peso da pessoa cadastrada anteriormente: ')))
     continuacao = input("Deseja continuar? S - SIM N - NÃO: ").upper()
     
+    salvar.append(pesoPessoas+nomePessoas)
+    nomePessoas.clear()
+    pesoPessoas.clear()
+    # print(f'{nomePessoas}verif')
+    # print(f'{pesoPessoas}verif')
     if continuacao ==  'N':
         break
-print(nomePessoas+pesoPessoas)
-
-nomePessoas(max(nomePessoas,posicoes))
+print(salvar)
