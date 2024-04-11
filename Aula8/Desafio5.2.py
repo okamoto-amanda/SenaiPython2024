@@ -7,16 +7,18 @@
 
 # C) Um listagem com as pessoas mais leves
 
-nomePessoas = []
-pesoPessoas = []
+dadosPessoas = []
+dadosCadastro = []
+
 continuacao = 'S'
 
 while True:
-    nomePessoas.append((input("Digite o nome: ")))
-    pesoPessoas.append(float(input('Digite o peso da pessoa cadastrada anteriormente: ')))
+    dadosCadastro.append(input("nome:"))
+    dadosCadastro.append(int(input("Peso")))
+    dadosPessoas.extend(dadosCadastro)
     continuacao = input("Deseja continuar? S - SIM N - NÃO: ").upper()
     
     if continuacao ==  'N':
         break
-print(nomePessoas+pesoPessoas)
-
+print(dadosPessoas)
+print(dadosCadastro)
