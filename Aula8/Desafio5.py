@@ -20,3 +20,4 @@ while True:
         break
 print(nomePessoas+pesoPessoas)
 
+nomePessoas(max)
