@@ -10,7 +10,7 @@
 nomePessoas = []
 pesoPessoas = []
 continuacao = 'S'
-
+posicoes = 0
 while True:
     nomePessoas.append((input("Digite o nome: ")))
     pesoPessoas.append(float(input('Digite o peso da pessoa cadastrada anteriormente: ')))
@@ -20,4 +20,4 @@ while True:
         break
 print(nomePessoas+pesoPessoas)
 
-nomePessoas(max)
+nomePessoas(max(nomePessoas,posicoes))
