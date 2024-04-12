@@ -24,5 +24,6 @@ for k, v in jogo.items():
     print(f'{k} tirou {v}')
     sleep(1)
 
-ranking = sorted(jogo.items(), key=itemgetter(1), reverse=True)
-print(ranking)
+
+vencedor = sorted(jogo.items(), key=itemgetter(1), reverse=True)
+print(vencedor)
