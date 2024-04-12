@@ -11,7 +11,7 @@ jogada2 = randint(1, 6)+randint(1, 6)
 jogada3 = randint(1, 6)+randint(1, 6)
 jogada4 = randint(1, 6)+randint(1, 6)
 #Colocando em ordem 
-
+jogo = {"jogador":'jogada'}
 jogo = {
     'jogador1' : jogada1,
     'jogador2' : jogada2,
@@ -22,8 +22,13 @@ jogo = {
 print(jogo)
 for k, v in jogo.items():
     print(f'{k} tirou {v}')
-    sleep(1)
+    #sleep(1)
 
 
 vencedor = sorted(jogo.items(), key=itemgetter(1), reverse=True)
+#vencedor definido como uma variável que recebe a lista gerada por sorted. Utilizando
+# o criterio de itens
+#Lembrando que o dicionario é como chave - valor
+
 print(vencedor)
+print(vencedor[0])
