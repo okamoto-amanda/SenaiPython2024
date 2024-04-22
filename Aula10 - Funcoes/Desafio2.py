@@ -8,10 +8,9 @@
 #  Olá, mundo
 # -----------------------------------
 
+textoUsuario = input("Digite seu texto: ")
 
-def escreva():
-    textoUsuario = input("Digite seu texto: ")
-
-    print(f"-" * 10 +"\n"+ textoUsuario + "\n"+"-" *10)
+def escreva(textoUsuario):
+    print(f"-" * (len(textoUsuario)) +"\n"+ textoUsuario + "\n"+"-" *(len(textoUsuario)))
     
-escreva()
+escreva(textoUsuario)
