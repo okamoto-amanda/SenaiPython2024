@@ -7,5 +7,5 @@ try:
     print(f"{numero}² = {numero**2}")
 
 except TypeError:
-    prin("Numero inválido")
+    print("Numero inválido")
     
