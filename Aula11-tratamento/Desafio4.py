@@ -7,7 +7,7 @@ try:
     nomeUsuario = input("Por favor digite seu nome: ")
     idadeUsuario = int(input(("Digite sua idade: ")))
     sleep(5)
-except TypeError :
+except TypeError:
     print("Dado inválido")
 
 finally:
