@@ -6,10 +6,14 @@ from time import sleep
 try:
     nomeUsuario = input("Por favor digite seu nome: ")
     idadeUsuario = int(input(("Digite sua idade: ")))
+    
     sleep(5)
-except TypeError:
+    print(f"Nome de usuário: {nomeUsuario}\nIdade usuario: {idadeUsuario}")
+    
+        
+except ValueError:
     print("Dado inválido")
 
 finally:
-    print(f"Nome de usuário: {nomeUsuario}.\nIdade usuario: {idadeUsuario}.")
+    
     print("Fim")
