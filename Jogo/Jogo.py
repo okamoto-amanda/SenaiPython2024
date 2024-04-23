@@ -31,7 +31,10 @@ relogio = pygame.time.Clock()
 while True:
     relogio.tick(30)
     #tela.fill((0,0,0))
+    mensagem = f'pontos: {pontos}'
+    textoFormatado = fonte.render(mensagem, True,(255,255,255))
     #colocando eventos
+    
     for event in pygame.event.get():
         if event.type == QUIT:
             pygame.quit()
@@ -71,7 +74,8 @@ while True:
         posXCirculo = randint(40,60)
         posYCirculo = randint(50,430)
         raioCirculo = 10
-        
+    
+    tela.blit(textoFormatado, (400,40))
     #Definindo fonte    
     
     fonte = pygame.font.sysfont("Arial", 20, True)
